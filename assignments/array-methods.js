@@ -102,6 +102,25 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+const emails = runners.map((state) => {
+  return {'first_name': state.first_name, 'email': state.email};
+
+});
+
+console.log(emails);
+
 // Problem 2
 
+const smallShirts = runners.filter((state) => {
+  return state.shirt_size == "S";
+})
+
+console.log(smallShirts);
+
 // Problem 3
+
+const topdonators = runners.filter((state) => {
+  return state.donation >= 100;
+})
+
+console.log(topdonators);
